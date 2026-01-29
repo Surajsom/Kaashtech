@@ -3,18 +3,18 @@ import { WORKFORCE_SOLUTIONS, INDUSTRIES_WE_SERVE, IT_SOLUTIONS } from "./sitema
 
 export function buildAllRoutes() {
   const workforce = WORKFORCE_SOLUTIONS.map((x) => ({
-    url: `/workforce-solutions/${slugify(x.title)}`,
-    title: x.title,
+    url: `/workforce-solutions/${slugify(x.label)}`,
+    title: x.label,
   }));
 
   const industries = INDUSTRIES_WE_SERVE.map((x) => ({
-    url: `/industries-we-serve/${slugify(x.title)}`,
-    title: x.title,
+    url: `/industries-we-serve/${slugify(x.label)}`,
+    title: x.label,
   }));
 
   const it = IT_SOLUTIONS.map((x) => ({
-    url: `/it-solutions/${slugify(x.title)}`,
-    title: x.title,
+    url: `/it-solutions/${slugify(x.label)}`,
+    title: x.label,
   }));
 
   const staticRoutes = [
