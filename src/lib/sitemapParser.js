@@ -1,5 +1,5 @@
 import { slugify } from "./slugify";
-import { WORKFORCE_SOLUTIONS, INDUSTRIES_WE_SERVE, IT_SOLUTIONS } from "./sitemapData";
+import { WORKFORCE_SOLUTIONS, INDUSTRIES_WE_SERVE, IT_SOLUTIONS } from "../data/sitemapData";
 
 export function buildAllRoutes() {
   const workforce = WORKFORCE_SOLUTIONS.map((x) => ({
@@ -8,7 +8,7 @@ export function buildAllRoutes() {
   }));
 
   const industries = INDUSTRIES_WE_SERVE.map((x) => ({
-    url: `/industries-we-serve/${slugify(x.label)}`,
+    url: `/industries/${slugify(x.label)}`,
     title: x.label,
   }));
 

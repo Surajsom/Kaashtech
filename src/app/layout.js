@@ -1,10 +1,12 @@
 import "./globals.css";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { LenisProvider } from "@/components/LenisProvider";
-import Transition from "@/components/ui/Transition";
-import { MeteorsDemo } from "@/components/MeteorsDemo";
-
+import Navbar from "@/components/Navbar";
+import SmoothScroll from "@/components/ui/SmoothScroll";
+import Footer from "@/components/Footer";
+import {Urbanist} from "next/font/google";
+const geistubanist = Urbanist({
+  variable: "--Urbanist",
+  subsets: ["latin"],
+});
 export const metadata = {
   title: "Staffing & IT Solutions",
   description: "Static site built with Next.js and Tailwind",
@@ -14,13 +16,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Transition>
-          <LenisProvider>
+        
+          <SmoothScroll>
             <Navbar />
 
             {children}
-          </LenisProvider>
-        </Transition>
+            <Footer/>
+          </SmoothScroll>
+        
       </body>
     </html>
   );
