@@ -73,7 +73,7 @@ export default function DirectSourcingPage() {
             <Fingerprint size={14} /> Identity-Driven Sourcing
           </motion.div>
           
-          <h1 className="text-7xl md:text-9xl font-black text-[#1b4c53] leading-none tracking-tighter">
+          <h1 className="text-6xl md:text-9xl font-black text-[#1b4c53] leading-none tracking-tighter">
             DIRECT <br /> <span className="italic font-light text-[#3a7e88]">CONNECTION.</span>
           </h1>
           
