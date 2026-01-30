@@ -49,10 +49,15 @@ export default function Hero() {
   return (
     <section className="relative w-full h-[85vh] md:h-[90vh] min-h-130 overflow-hidden">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover object-none bg-center transition-all duration-700 scale-105"
-        style={{ backgroundImage: `url(${currentSlide.image})` }}
-      />
+     <div className="absolute inset-0 overflow-hidden">
+  <Image
+    src={currentSlide.image}
+    alt="Hero banner"
+    fill
+    priority
+    className="object-cover scale-105 transition-all duration-700"
+  />
+</div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60" />
