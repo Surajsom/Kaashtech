@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const slides = [
   {
@@ -52,7 +53,7 @@ export default function Hero() {
      <div className="absolute inset-0 overflow-hidden">
   <Image
     src={currentSlide.image}
-    alt="Hero banner"
+    alt="Hero-banner"
     fill
     priority
     className="object-cover scale-105 transition-all duration-700"
