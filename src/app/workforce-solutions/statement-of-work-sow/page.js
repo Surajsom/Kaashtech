@@ -12,7 +12,7 @@ import {
   CalendarDays,
   ShieldAlert
 } from "lucide-react";
-
+import Link from 'next/link';
 const pillars = [
   {
     title: "Outcome Based",
@@ -77,7 +77,7 @@ export default function SOWPage() {
             <FileCheck size={14} /> Result-Centric Management
           </motion.div>
 
-          <h1 className="text-9xl md:text-[9rem] font-black text-[#1b4c53] leading-none tracking-tighter">
+          <h1 className="text-8xl md:text-[9rem] font-black text-[#1b4c53] leading-none tracking-tighter">
             PROVE <br /> <span className="italic font-light text-[#3a7e88]">VALUE.</span>
           </h1>
 
@@ -189,7 +189,7 @@ export default function SOWPage() {
       </section>
 
       {/* 4. FINAL CTA - START THE PROJECT */}
-      <section className="pb-32 px-6">
+      <section className="pb-32 px-3">
         <motion.div
           whileHover={{ y: -10 }}
           className="max-w-6xl mx-auto bg-[#1b4c53] rounded-[5rem] p-16 text-center text-[#f9faed] relative overflow-hidden shadow-2xl shadow-[#1b4c53]/40"
@@ -202,13 +202,14 @@ export default function SOWPage() {
             ))}
           </div>
 
-          <h2 className="text-5xl md:text-8xl font-bold mb-10 tracking-tighter">
+          <h2 className="text-5xl md:text-8xl font-bold mb-10 tracking-tighter text-center">
             Deliver with <br /> Confidence.
           </h2>
           <p className="text-[#f9faed]/50 text-xl mb-14 max-w-xl mx-auto font-medium font-[Urbanist]">
             Turn your complex requirements into a streamlined, milestone-driven
             project today.
           </p>
+           <Link href = "/contact-us">
 
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -216,6 +217,7 @@ export default function SOWPage() {
           >
             Draft My SOW <ChevronRight className="group-hover:translate-x-2 transition-transform" />
           </motion.div>
+          </Link>
         </motion.div>
       </section>
     </div>

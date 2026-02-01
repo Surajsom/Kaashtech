@@ -76,7 +76,7 @@ export default function HealthcarePage() {
             <HeartPulse size={14} className="inline mr-2 animate-pulse" /> Precision Health Tech
           </motion.div>
           <h1 className="text-8xl md:text-[10rem] font-black text-[#1b4c53] leading-none tracking-tighter">
-            CARE <br /> <span className="italic font-light text-[#3a7e88]">EVOLVED.</span>
+            CARE <br /> <span className="italic font-light text-[#3a7e88] text-7xl md:text-8xl">EVOLVED.</span>
           </h1>
           <p className="mt-6 text-xl font-[Urbanist] md:mb-16 text-[#1b4c53]/70 font-medium max-w-xl mx-auto leading-relaxed">
             Revolutionizing patient outcomes through secure interoperability, 

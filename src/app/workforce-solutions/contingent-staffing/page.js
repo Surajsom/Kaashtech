@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Zap, Users, Shield, Cpu, Globe, Rocket, ArrowRight } from "lucide-react";
-
+import Link from 'next/link';
 const pillars = [
   {
     title: "Rapid Scale",
@@ -74,7 +74,7 @@ export default function ContingentPage() {
           >
             On-Demand Workforce
           </motion.div>
-          <h1 className="text-7xl md:text-9xl font-black text-[#1b4c53] leading-none tracking-tighter">
+          <h1 className="text-8xl md:text-9xl font-black text-[#1b4c53] leading-none tracking-tighter">
             STAY <br /> <span className="italic font-light">FLUID.</span>
           </h1>
           <p className="my-8 mb-20 text-xl text-[#1b4c53]/70 font-medium max-w-lg mx-auto font-[Urbanist]">
@@ -204,9 +204,11 @@ export default function ContingentPage() {
           <p className="text-[#f9faed]/60 text-xl mb-12 max-w-xl mx-auto font-[Urbanist]">
             Get a tailored list of contingent talent within 24 hours.
           </p>
+          <Link href = "/contact-us">
           <div className="w-16 h-16 rounded-full border border-[#f9faed]/30 mx-auto flex items-center justify-center hover:bg-[#f9faed] hover:text-[#1b4c53] cursor-pointer transition-all">
             <ArrowRight />
           </div>
+          </Link>
         </motion.div>
       </section>
     </div>

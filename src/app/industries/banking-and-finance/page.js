@@ -4,18 +4,15 @@ import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   ShieldCheck,
-
   TrendingUp,
-
   Lock,
-
   ArrowRight,
   Scale,
   Coins,
   Banknote, Zap
 } from "lucide-react";
 import PageBanner from "@/components/ui/PageBanner";
-
+import Link from 'next/link';
 const pillars = [
   {
     title: "Fintech Innovation",
@@ -185,12 +182,14 @@ export default function BankingFinancePage() {
             <h2 className="text-5xl md:text-8xl font-bold mb-10 tracking-tighter">
               Invest in the <br /> Future.
             </h2>
-            <motion.button
+            <Link href="/contact-us">
+            <motion.div
               whileHover={{ scale: 1.05 }}
               className="inline-flex items-center gap-4 bg-[#f9faed] text-[#1b4c53] md:px-14 md:py-7 px-10 py-4 rounded-full font-black text-sm md:text-xl hover:shadow-[0_0_40px_rgba(249,250,237,0.2)] transition-all group"
             >
               Launch Your Fintech Solution <ArrowRight />
-            </motion.button>
+            </motion.div>
+            </Link>
           </motion.div>
         </section>
       </div>

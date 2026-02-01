@@ -95,25 +95,25 @@ export default function ContactUsPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <h1 className="text-8xl lg:text-[10rem] font-black text-[#1b4c53] leading-[0.8] tracking-tighter uppercase mb-8">
+            <h1 className="text-8xl lg:text-[10rem] font-black text-[#1b4c53] leading-[0.8] tracking-tighter uppercase mb-8 text-center md:text-left">
               Let's <br />
               <span className="italic font-light text-7xl md:text-9xl text-[#3a7e88]">
                 Connect.
               </span>
             </h1>
 
-            <p className="text-[#1b4c53]/60 text-xl max-w-md font-medium">
+            <p className="text-[#1b4c53]/60 text-xl max-w-md font-medium text-center md:text-left justify-center">
               Transforming businesses and careers through strategic IT
               synchronization.
             </p>
 
-            <div className="mt-12 mx-auto inline-flex p-1.5 bg-[#1b4c53]/5 rounded-4xl border border-[#1b4c53]/10 md:flex-row flex-col">
+            <div className="mt-12 flex mx-15 md:mx-0 md:mr-35 p-1.5 bg-[#1b4c53]/5 rounded-4xl border border-[#1b4c53]/10 md:flex-row flex-col justify-center md:justify-around">
               <button
-                onClick={() => {
+                onClick={() => {  
                   setUserType("employer");
                   setIsSuccess(false);
                 }}
-                className={`px-10 py-5 rounded-[1.6rem] font-bold transition-all flex items-center gap-3 ${
+                className={`px-3 md:px-7 py-5 grow  rounded-[1.6rem] font-bold justify-center md:justify-start transition-all flex items-center gap-3 ${
                   userType === "employer"
                     ? "bg-[#1b4c53] text-[#f9faed]"
                     : "text-[#1b4c53]/40"
@@ -127,7 +127,7 @@ export default function ContactUsPage() {
                   setUserType("employee");
                   setIsSuccess(false);
                 }}
-                className={`px-10 py-5 rounded-[1.6rem] font-bold transition-all flex items-center gap-3 ${
+                className={`px-3 md:px-7 py-5 grow rounded-[1.6rem] font-bold transition-all justify-center md:justify-start flex items-center gap-3 ${
                   userType === "employee"
                     ? "bg-[#1b4c53] text-[#f9faed]"
                     : "text-[#1b4c53]/40"

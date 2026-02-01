@@ -66,7 +66,7 @@ export default function InfrastructureSupportPage() {
           >
             <ShieldAlert size={14} className="inline mr-2" /> Mission-Critical Reliability
           </motion.div>
-          <h1 className="text-7xl md:text-[10rem] font-black text-[#1b4c53] leading-none tracking-tighter">
+          <h1 className="text-8xl md:text-[10rem] font-black text-[#1b4c53] leading-none tracking-tighter">
             CORE <br /> <span className="italic font-light text-[#3a7e88]">BASE.</span>
           </h1>
           <p className="mt-10 font-[Urbanist] text-xl md:mb-16 text-[#1b4c53]/70 font-medium max-w-xl mx-auto leading-relaxed">

@@ -12,7 +12,7 @@ import {
   ArrowRight, 
   Lock 
 } from "lucide-react";
-
+import Link from 'next/link';
 const pillars = [
   {
     title: "Global Payroll",
@@ -75,8 +75,8 @@ export default function GlobalPayrollPage() {
             <Lock size={12} /> Secure Global Infrastructure
           </motion.div>
           
-          <h1 className="text-7xl md:text-9xl font-black text-[#1b4c53] leading-none tracking-tighter">
-            WORLD <br /> <span className="italic font-light text-[#3a7e88]">UNLOCKED.</span>
+          <h1 className="text-8xl md:text-9xl font-black text-[#1b4c53] leading-none tracking-tighter">
+            WORLD <br /> <span className="italic font-light text-[#3a7e88] text-7xl md:text-8xl">UNLOCKED.</span>
           </h1>
           
           <p className="mt-8 text-xl mb-18 font-[Urbanist] text-[#1b4c53]/70 font-medium max-w-xl mx-auto leading-relaxed">
@@ -200,7 +200,7 @@ export default function GlobalPayrollPage() {
       </section>
 
       {/* 4. FINAL CTA - GLOBAL SCALE */}
-      <section className="pb-32 px-6">
+      <section className="pb-32 px-2">
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -216,13 +216,14 @@ export default function GlobalPayrollPage() {
           <h2 className="text-5xl md:text-7xl font-bold mb-10 tracking-tight ">
             Ready to hire <br /> anywhere?
           </h2>
-          
+          <Link href = "/contact-us">
           <motion.div 
             whileHover={{ scale: 1.05 }}
-            className="inline-flex items-center gap-4 bg-[#f9faed] text-[#1b4c53] md:px-12 md:py-6 px-8 py-3  rounded-full font-black text-xl cursor-pointer shadow-xl group"
+            className="inline-flex items-center gap-2 bg-[#f9faed] text-[#1b4c53] md:px-12 md:py-6 px-8 py-3 rounded-full font-black text-xl cursor-pointer shadow-xl group"
           >
             Start Global Expansion <ArrowRight className="group-hover:translate-x-2 transition-transform" />
           </motion.div>
+          </Link>
         </motion.div>
       </section>
     </div>

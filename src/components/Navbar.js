@@ -126,7 +126,7 @@ export default function Navbar() {
             <img
               src={
                 scrolled
-                  ? "/images/kaashtech-dark.png"
+                  ? "/images/kaashtech-logo-final.png"
                   : "/images/kaashtech-logo-final.png"
               }
               alt="logo"

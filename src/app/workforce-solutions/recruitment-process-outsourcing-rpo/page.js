@@ -12,7 +12,7 @@ import {
   Share2, 
   Layers 
 } from "lucide-react";
-
+import Link from 'next/link';
 const pillars = [
   {
     title: "Full-Cycle RPO",
@@ -187,10 +187,10 @@ export default function RPOPage() {
       
 
       {/* 4. FINAL CTA - TRANSFORM YOUR TA */}
-      <section className="pb-32 px-6">
+      <section className="pb-32 px-2">
         <motion.div
           whileHover={{ scale: 0.99 }}
-          className="max-w-6xl mx-auto bg-[#1b4c53] rounded-[5rem] p-16 text-center text-[#f9faed] relative overflow-hidden"
+          className="max-w-6xl mx-auto bg-[#1b4c53] rounded-[5rem] md:p-22 p-12 text-center text-[#f9faed] relative overflow-hidden"
         >
           {/* Subtle Glow Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#3a7e88]/10 to-transparent pointer-events-none" />
@@ -202,13 +202,14 @@ export default function RPOPage() {
             Let’s discuss how an RPO partnership can deliver predictable, 
             high-quality hiring results for your organization.
           </p>
-          
-          <motion.button
+          <Link href = "/contact-us">
+          <motion.div
             whileHover={{ scale: 1.05 }}
             className="inline-flex items-center gap-4 bg-[#f9faed] text-[#1b4c53] md:px-14 md:py-7 px-10 py-4 rounded-full font-black text-md md:text-xl hover:shadow-[0_0_40px_rgba(249,250,237,0.2)] transition-all group"
           >
             Consult Our RPO Experts <ArrowRight className="group-hover:translate-x-2 transition-transform" />
-          </motion.button>
+          </motion.div>
+          </Link>
         </motion.div>
       </section>
     </div>

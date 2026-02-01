@@ -66,8 +66,8 @@ export default function LifeSciencePage() {
           >
             <Atom size={14} className="inline mr-2 animate-spin-slow" /> R&D Infrastructure
           </motion.div>
-          <h1 className="text-7xl md:text-[10rem] font-black text-[#1b4c53] leading-none tracking-tighter">
-            PURE <br /> <span className="italic font-light text-[#3a7e88]">SCIENCE.</span>
+          <h1 className="text-8xl md:text-[10rem] font-black text-[#1b4c53] leading-none tracking-tighter">
+            PURE <br /> <span className="italic font-light text-[#3a7e88] text-7xl md:text-8xl">SCIENCE.</span>
           </h1>
           <p className="mt-10 font-[Urbanist] text-xl md:mb-19 text-[#1b4c53]/70 font-medium max-w-xxl mx-auto leading-relaxed">
             Accelerating the pace of discovery through advanced data architecture, 

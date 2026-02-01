@@ -12,7 +12,7 @@ import {
   ArrowRight, 
   UserPlus 
 } from "lucide-react";
-
+import Link from 'next/link';
 const pillars = [
   {
     title: "Precision Matching",
@@ -67,7 +67,7 @@ export default function DirectHirePage() {
           >
             Permanent Placement
           </motion.div>
-          <h1 className="text-7xl md:text-9xl font-black text-[#1b4c53] leading-none tracking-tighter">
+          <h1 className="text-8xl md:text-9xl font-black text-[#1b4c53] leading-none tracking-tighter">
             BUILD <br /> <span className="italic font-light text-[#3a7e88]">LEGACY.</span>
           </h1>
           <p className="mt-8 mb-15 font-[Urbanist] text-xl text-[#1b4c53]/70 font-medium max-w-lg mx-auto leading-relaxed">
@@ -180,13 +180,14 @@ export default function DirectHirePage() {
           <p className="text-[#f9faed]/60 text-xl mb-12 max-w-xl mx-auto font-[Urbanist]">
             Ready to secure the talent that will define your next decade? Let’s start the search.
           </p>
-          
+          <Link href = "/contact-us">
           <motion.div 
             whileHover={{ scale: 1.1 }}
             className="w-16 h-16 rounded-full border border-[#f9faed]/30 mx-auto flex items-center justify-center hover:bg-[#f9faed] hover:text-[#1b4c53] cursor-pointer transition-all group"
           >
             <ArrowRight className="group-hover:rotate-[-45deg] transition-transform" />
           </motion.div>
+          </Link>
         </motion.div>
       </section>
     </div>

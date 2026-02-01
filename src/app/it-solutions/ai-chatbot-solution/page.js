@@ -37,7 +37,7 @@ export default function AIChatbotPage() {
           <div className="inline-block mb-8 px-6 py-2 rounded-full border border-[#1b4c53] text-[#1b4c53] text-sm font-bold uppercase tracking-widest">
             AI & Automation
           </div>
-          <h1 className="text-7xl px-2 md:text-[9rem] font-black text-[#1b4c53] leading-none tracking-tighter p-6">
+          <h1 className="text-6xl px-2 md:text-[9rem] font-black text-[#1b4c53] leading-none tracking-tighter p-6">
             INTELLIGENT <br /> <span className="italic font-light text-[#3a7e88]">CONVERSE.</span>
           </h1>
           <p className="md:mt-10 mt-4 text-xl font-[Urbanist] px-2 text-[#1b4c53]/70 font-medium max-w-2xl mx-auto leading-relaxed">

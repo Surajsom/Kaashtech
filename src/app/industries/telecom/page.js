@@ -81,8 +81,8 @@ export default function TelecomIndustryPage() {
           >
             <Signal size={14} className="inline mr-2 animate-pulse" /> Next-Gen Carrier Solutions
           </motion.div>
-          <h1 className="text-7xl md:text-[10rem] font-black text-[#1b4c53] leading-none tracking-tighter">
-            SIGNAL <br /> <span className="italic font-light text-[#3a7e88]">UNBOUND.</span>
+          <h1 className="text-8xl md:text-[10rem] font-black text-[#1b4c53] leading-none tracking-tighter">
+            SIGNAL <br /> <span className="italic font-light text-[#3a7e88] text-7xl md:text-9xl">UNBOUND.</span>
           </h1>
           <p className="mt-10 font-[Urbanist] text-xl md:mb-16 text-[#1b4c53]/70 font-medium max-w-xxl mx-auto leading-relaxed">
             Powering the world's connectivity through software-defined networks, 

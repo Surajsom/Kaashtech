@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import SmoothScroll from "@/components/ui/SmoothScroll";
 import Footer from "@/components/Footer";
 import {Urbanist} from "next/font/google";
+import TopBadge from "@/components/ui/TopBadge";
 const geistubanist = Urbanist({
   variable: "--Urbanist",
   subsets: ["latin"],
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body>
         
           <SmoothScroll>
+            <TopBadge/>
             <Navbar />
 
             {children}

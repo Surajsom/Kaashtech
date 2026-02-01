@@ -76,7 +76,7 @@ export default function DigitalMarketingPage() {
             Audience & Acquisition
           </motion.div>
           <h1 className="text-8xl md:text-[10rem] font-black text-[#1b4c53] leading-none tracking-tighter">
-            LOUD <br /> <span className="italic font-light text-[#3a7e88]">GROWTH.</span>
+            LOUD <br /> <span className="italic font-light text-[#3a7e88] text-7xl md:text-8xl">GROWTH.</span>
           </h1>
           <p className="font-[Urbanist] mt-10 md:mb-22 text-xl text-[#1b4c53]/70 font-medium max-w-xl mx-auto leading-relaxed">
             Crafting high-impact digital experiences that resonate with your audience and accelerate your brand's market velocity.

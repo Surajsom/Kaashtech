@@ -12,7 +12,7 @@ import {
   Layers, 
   Fingerprint 
 } from "lucide-react";
-
+import Link from 'next/link';
 const pillars = [
   {
     title: "Brand Leverage",
@@ -73,11 +73,11 @@ export default function DirectSourcingPage() {
             <Fingerprint size={14} /> Identity-Driven Sourcing
           </motion.div>
           
-          <h1 className="text-6xl md:text-9xl font-black text-[#1b4c53] leading-none tracking-tighter">
-            DIRECT <br /> <span className="italic font-light text-[#3a7e88]">CONNECTION.</span>
+          <h1 className="text-7xl md:text-9xl font-black text-[#1b4c53] leading-none tracking-tighter px-4">
+            DIRECT <br /> <span className="italic font-light text-[#3a7e88] text-6xl md:text-8xl">CONNECTION.</span>
           </h1>
           
-          <p className=" font-[Urbanist] mt-8 mb-17 text-xl text-[#1b4c53]/70 font-medium max-w-lg mx-auto leading-relaxed">
+          <p className=" font-[Urbanist] mt-8 mb-17 text-xl text-[#1b4c53]/70 font-medium max-w-lg mx-4 md:mx-auto leading-relaxed">
             Own your talent ecosystem. Reduce reliance on external agencies and 
             source directly from your own private talent cloud.
           </p>
@@ -212,14 +212,15 @@ export default function DirectSourcingPage() {
             Revolutionize your recruitment spend with a direct sourcing strategy 
             that builds long-term talent equity.
           </p>
-          
-          <motion.button
+          <Link href = "/contact-us">
+          <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 bg-[#f9faed] text-[#1b4c53] px-10 py-6 rounded-full font-black text-sm md:text-xl hover:shadow-[0_0_30px_rgba(249,250,237,0.3)] transition-all group"
+            className="inline-flex items-center gap-2 bg-[#f9faed] text-[#1b4c53] px-10 py-6 rounded-full font-black text-sm md:text-xl hover:shadow-[0_0_30px_rgba(249,250,237,0.3)] transition-all group"
           >
             Explore Direct Sourcing <ArrowRight className="group-hover:translate-x-2 transition-transform" />
-          </motion.button>
+          </motion.div>
+          </Link>
         </motion.div>
       </section>
     </div>

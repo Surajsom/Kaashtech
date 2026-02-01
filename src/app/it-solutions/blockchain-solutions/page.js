@@ -51,10 +51,10 @@ export default function BlockchainPage() {
           >
             Web3 & Ledger Technology
           </motion.div>
-          <h1 className="text-7xl md:text-[9rem] px-2 font-black text-[#1b4c53] leading-none tracking-tighter">
-            TRUST <br /> <span className="italic font-light text-[#3a7e88]">DECENTRAL.</span>
+          <h1 className="text-8xl md:text-[9rem] px-2 font-black text-[#1b4c53] leading-none tracking-tighter">
+            TRUST <br /> <span className="italic font-light text-[#3a7e88] text-7xl md:text-8xl">DECENTRAL.</span>
           </h1>
-          <p className="mt-8 font-[Urbanist] text-xl md:mb-16 text-[#1b4c53]/70 font-medium max-w-xl mx-auto leading-relaxed">
+          <p className="mt-8 font-[Urbanist] text-xl md:mb-16 text-[#1b4c53]/70 font-medium max-w-xl mx-3 leading-relaxed">
             Revolutionizing security and transparency through immutable blockchain architectures tailored for the modern enterprise.
           </p>
         </div>

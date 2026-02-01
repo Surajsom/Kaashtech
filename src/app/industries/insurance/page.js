@@ -71,7 +71,7 @@ export default function InsurancePage() {
             <ShieldCheck size={14} className="inline mr-2" /> Risk-Mitigated Ecosystems
           </motion.div>
           <h1 className="text-8xl md:text-[10rem] font-black text-[#1b4c53] leading-none tracking-tighter">
-            TRUST <br /> <span className="italic font-light text-[#3a7e88]">ASSURED.</span>
+            TRUST <br /> <span className="italic font-light text-[#3a7e88] text-7xl md:text-8xl">ASSURED.</span>
           </h1>
           <p className="mt-1 font-[Urbanist] md:mt-10 text-xl md:mb-18 text-[#1b4c53]/70 font-medium max-w-2xl mx-auto leading-relaxed">
             Architecting the digital foundation for a secure future. We turn high-risk 
