@@ -232,8 +232,8 @@ export default function ContactUsPage() {
           </AnimatePresence>
         </motion.div>
       </div>
-     <section className="py-24 px-6 bg-[#f9faed] border-t border-[#1b4c53]/5 w-full mb-20">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 rounded-[4rem] overflow-hidden shadow-2xl bg-white border border-[#1b4c53]/5">
+     <section className="py-24 px-6 bg-[#f9faed] border-t border-[#1b4c53]/5 w-full">
+  <div className="max-w-7xl mx-auto p-50 grid grid-cols-1 lg:grid-cols-2 rounded-[4rem] overflow-hidden shadow-2xl bg-white border border-[#1b4c53]/5">
     
     {/* LEFT SIDE: CONTACT DETAILS */}
     <div className="p-12 lg:p-20 bg-[#1b4c53] text-[#f9faed] flex flex-col justify-center relative overflow-hidden">
