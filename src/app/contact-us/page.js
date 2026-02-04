@@ -9,12 +9,6 @@ import {
   Building2,
   Paperclip,
   CheckCircle2,
-  MapPin,
-  Mail,
-  Phone,
-  Clock,
-  ArrowUpRight,
-  Globe2,
 } from "lucide-react";
 
 export default function ContactUsPage() {
@@ -82,12 +76,7 @@ export default function ContactUsPage() {
       {/* BACKGROUND GRID */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.03]">
         <svg width="100%" height="100%">
-          <pattern
-            id="grid"
-            width="50"
-            height="50"
-            patternUnits="userSpaceOnUse"
-          >
+          <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
             <path
               d="M 50 0 L 0 0 0 50"
               fill="none"
@@ -120,7 +109,7 @@ export default function ContactUsPage() {
 
             <div className="mt-12 flex mx-15 md:mx-0 md:mr-35 p-1.5 bg-[#1b4c53]/5 rounded-4xl border border-[#1b4c53]/10 md:flex-row flex-col justify-center md:justify-around">
               <button
-                onClick={() => {
+                onClick={() => {  
                   setUserType("employer");
                   setIsSuccess(false);
                 }}
@@ -237,145 +226,7 @@ export default function ContactUsPage() {
           </AnimatePresence>
         </motion.div>
       </div>
-      <section className="py-10 px-6 bg-[#f9faed] border-t border-[#1b4c53]/5">
-        <div className="max-w-7xl mx-auto p-50 grid grid-cols-1 lg:grid-cols-2 rounded-[4rem] overflow-hidden shadow-2xl bg-white border border-[#1b4c53]/5">
-          {/* LEFT SIDE: CONTACT DETAILS */}
-          <div className="p-12 lg:p-20 bg-[#1b4c53] text-[#f9faed] flex flex-col justify-center relative overflow-hidden">
-            {/* Decorative Blueprint Background */}
-            <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-              <svg width="100%" height="100%">
-                <defs>
-                  <pattern
-                    id="mapGrid"
-                    width="40"
-                    height="40"
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <path
-                      d="M 40 0 L 0 0 0 40"
-                      fill="none"
-                      stroke="#f9faed"
-                      strokeWidth="0.5"
-                    />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#mapGrid)" />
-              </svg>
-            </div>
-
-            <div className="relative z-10">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-[#3a7e88]/20 border border-[#3a7e88]/30 text-[#3a7e88] text-[10px] font-black uppercase tracking-[0.3em]"
-              >
-                <span className="w-2 h-2 rounded-full bg-[#3a7e88] animate-pulse" />{" "}
-                Global Headquarters
-              </motion.div>
-
-              <h2 className="text-5xl font-black mb-12 tracking-tighter uppercase italic leading-none">
-                Visit Our <br />{" "}
-                <span className="text-[#3a7e88] not-italic font-light">
-                  Nexus.
-                </span>
-              </h2>
-
-              <div className="space-y-10">
-                {/* Address */}
-                <div className="flex gap-6 group cursor-pointer">
-                  <div className="w-14 h-14 flex items-center justify-center group-hover:bg-[#3a7e88] transition-all duration-500">
-                    <MapPin
-                      size={24}
-                      className="text-[#3a7e88] group-hover:text-[#f9faed]"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
-                      {"USA Office (Headquarter)"}
-                    </h4>
-                    <p className="text-xl font-medium opacity-80 leading-snug">
-                      30 N Gould St Ste R, Sheridan,
-                      <br /> WY 82801
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
-                      Indian Office
-                    </h4>
-                    <p className="text-xl font-medium opacity-80 leading-snug">
-                      Arocon, Noida
-                      <br />
-                      Sector 125, Uttar Pradesh 201313
-                    </p>
-                  </div>
-                </div>
-
-                {/* Contact Info */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="flex gap-6 group cursor-pointer">
-                    <div className="w-14 h-14 flex items-center justify-center group-hover:bg-[#3a7e88] transition-all duration-500">
-                      <Mail
-                        size={24}
-                        className="text-[#3a7e88] group-hover:text-[#f9faed]"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
-                        Email Sync
-                      </h4>
-                      <p className="text-lg font-bold break-all">
-                        contact@kaashtech.com
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Operational Hours */}
-                <div className="pt-10 border-t border-white/10 flex items-center justify-between">
-                  <div className="flex items-center gap-3"></div>
-                  <motion.a
-                    href="#"
-                    whileHover={{ x: 5 }}
-                    className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#3a7e88]"
-                  >
-                    Get Directions <ArrowUpRight size={14} />
-                  </motion.a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* RIGHT SIDE: MAP */}
-          <div className="relative h-[500px] lg:h-auto bg-[#f9faed] overflow-hidden">
-            <iframe
-              src="https://maps.google.com/maps?q=30%20N%20Gould%20St%20Suite%20R,%20Sheridan,%20WY%2082801&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="100%"
-              style={{
-                border: 0,
-                filter: "grayscale(1) invert(0.9) opacity(0.8)",
-              }}
-              allowFullScreen
-              loading="lazy"
-            />
-
-            {/* Map Overlay HUD */}
-            <div className="absolute top-8 left-8 bg-[#1b4c53] p-4 rounded-2xl shadow-xl border border-white/10 flex items-center gap-4">
-              <div className="w-10 h-10 bg-[#3a7e88] rounded-xl flex items-center justify-center">
-                <Globe2 size={20} className="text-[#f9faed]" />
-              </div>
-              <div>
-                <span className="block text-[10px] font-black uppercase tracking-tighter text-[#f9faed]">
-                  Real-time Status
-                </span>
-                <span className="text-[10px] text-[#3a7e88] font-bold">
-                  Location: Active
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 }
