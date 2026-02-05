@@ -9,6 +9,12 @@ import {
   Building2,
   Paperclip,
   CheckCircle2,
+  Globe2,
+  MapPin,
+  Mail,
+  ArrowUpRight,
+  Phone,
+  Clock ,
 } from "lucide-react";
 
 export default function ContactUsPage() {
@@ -72,11 +78,16 @@ export default function ContactUsPage() {
   };
 
   return (
-    <div className="bg-[#f9faed] min-h-screen font-sans selection:bg-[#1b4c53] selection:text-white">
+    <div className="bg-[#f9faed] min-h-screen font-sans pb-20 selection:bg-[#1b4c53] selection:text-white">
       {/* BACKGROUND GRID */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.03]">
         <svg width="100%" height="100%">
-          <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+          <pattern
+            id="grid"
+            width="50"
+            height="50"
+            patternUnits="userSpaceOnUse"
+          >
             <path
               d="M 50 0 L 0 0 0 50"
               fill="none"
@@ -109,7 +120,7 @@ export default function ContactUsPage() {
 
             <div className="mt-12 flex mx-15 md:mx-0 md:mr-35 p-1.5 bg-[#1b4c53]/5 rounded-4xl border border-[#1b4c53]/10 md:flex-row flex-col justify-center md:justify-around">
               <button
-                onClick={() => {  
+                onClick={() => {
                   setUserType("employer");
                   setIsSuccess(false);
                 }}
@@ -226,7 +237,135 @@ export default function ContactUsPage() {
           </AnimatePresence>
         </motion.div>
       </div>
-      
+      <div className="px-5 bg-[#f9faed] border-t border-[#1b4c53]/5">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 pb-15 h-fit lg:gap-0 rounded-[4rem] overflow-hidden shadow-2xl bg-white border border-[#1b4c53]/5">
+          {/* LEFT SIDE: CONTACT DETAILS */}
+          <div className="p-12 lg:p-20 bg-[#1b4c53] text-[#f9faed] flex flex-col justify-center relative overflow-hidden">
+            {/* Decorative Blueprint Background */}
+            <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+              <svg width="100%" height="100%">
+                <defs>
+                  <pattern
+                    id="mapGrid"
+                    width="40"
+                    height="40"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <path
+                      d="M 40 0 L 0 0 0 40"
+                      fill="none"
+                      stroke="#f9faed"
+                      strokeWidth="0.5"
+                    />
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#mapGrid)" />
+              </svg>
+            </div>
+
+            <div className="relative z-10">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-[#3a7e88]/20 border border-[#3a7e88]/30 text-[#3a7e88] text-[10px] font-black uppercase tracking-[0.3em]"
+              >
+                <span className="w-2 h-2 rounded-full bg-[#3a7e88] animate-pulse" />{" "}
+                Global Headquarters
+              </motion.div>
+
+              <h2 className="text-5xl font-black mb-12 tracking-tighter uppercase italic leading-none">
+                Visit Our <br />{" "}
+                <span className="text-[#3a7e88] not-italic font-light">
+                  Nexus.
+                </span>
+              </h2>
+
+              <div className="space-y-10">
+                {/* Address */}
+                <div className="flex gap-6 group cursor-pointer">
+                  <div className="w-14 h-14 border-white/10 flex items-center justify-center group-hover:bg-[#3a7e88] transition-all duration-500">
+                    <MapPin
+                      size={24}
+                      className="text-[#3a7e88] group-hover:text-[#f9faed]"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
+                      Office Location
+                    </h4>
+                    <p className="text-xl font-medium opacity-80 leading-snug">
+                      123 Innovation Drive, Tech District
+                      <br />
+                      San Francisco, CA 94105
+                    </p>
+                  </div>
+                   <div>
+                    <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
+                      Office Location
+                    </h4>
+                    <p className="text-xl font-medium opacity-80 leading-snug">
+                      123 Innovation Drive, Tech District
+                      <br />
+                      San Francisco, CA 94105
+                    </p>
+                  </div>
+                </div>
+
+                {/* Contact Info */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                  <div className="flex gap-6 group cursor-pointer">
+                    <div className="w-14 h-14 border-white/10 flex items-center justify-center group-hover:bg-[#3a7e88] transition-all duration-500">
+                      <Mail
+                        size={24}
+                        className="text-[#3a7e88] group-hover:text-[#f9faed]"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
+                        Email Sync
+                      </h4>
+                      <p className="text-lg font-bold">contact@kaashtech.com</p>
+                    </div>
+                  </div>
+                 
+                </div>
+
+                {/* Operational Hours */}
+                <div className="pt-10 border-t border-white/10 flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                   
+                  </div>
+                  <motion.a
+                    href="#"
+                    whileHover={{ x: 5 }}
+                    className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#3a7e88]"
+                  >
+                    Get Directions <ArrowUpRight size={14} />
+                  </motion.a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT SIDE: INTERACTIVE MAP PLACEHOLDER */}
+          <div className="relative h-[500px] lg:h-auto bg-[#f9faed] overflow-hidden">
+            {/* Custom Map Styling for the Theme */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050c58!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1670000000000!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{
+                border: 0,
+                filter: "grayscale(1) invert(0.9) opacity(0.8)",
+              }}
+              allowFullScreen
+              loading="lazy"
+            />
+
+           
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
