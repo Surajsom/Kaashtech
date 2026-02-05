@@ -14,7 +14,7 @@ import {
   Container,
   Activity
 } from "lucide-react";
-
+import Link from 'next/link';
 const pillars = [
   { 
     title: "Smart Factory (IoT)", 
@@ -158,21 +158,23 @@ export default function ManufacturingIndustryPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="pb-32 px-6">
+      <section className="pb-32 md:px-6 px-4">
         <motion.div
           whileHover={{ scale: 0.99 }}
-          className="max-w-6xl mx-auto bg-[#1b4c53] rounded-[5rem] p-24 text-center text-[#f9faed] relative overflow-hidden shadow-2xl shadow-[#1b4c53]/40"
+          className="max-w-6xl mx-auto bg-[#1b4c53] rounded-[5rem] p-20 text-center text-[#f9faed] relative overflow-hidden shadow-2xl shadow-[#1b4c53]/40"
         >
           <Cpu className="mx-auto mb-10 w-20 h-20 text-[#3a7e88] opacity-50" />
           <h2 className="text-5xl md:text-8xl font-bold mb-10 tracking-tighter">
             Engineer the <br /> Future.
           </h2>
-          <motion.button 
+          <Link href="/contact-us">
+          <motion.div 
             whileHover={{ scale: 1.05 }}
-            className="inline-flex items-center gap-4 bg-[#f9faed] text-[#1b4c53] px-14 py-7 rounded-full font-black text-xl hover:shadow-xl transition-all"
+            className="inline-flex items-center md:gap-4 gap-2 bg-[#f9faed] text-[#1b4c53] px-8 md:px-14 md:py-7 py-4 rounded-full font-black text-xl hover:shadow-xl transition-all"
           >
             Start Your Factory Project <ArrowRight />
-          </motion.button>
+          </motion.div>
+          </Link>
         </motion.div>
       </section>
     </div>

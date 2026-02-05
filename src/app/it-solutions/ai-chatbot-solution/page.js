@@ -107,10 +107,10 @@ export default function AIChatbotPage() {
       <section className="bg-[#f9faed] px-6 my-18">
         <div className="max-w-5xl mx-auto bg-[#1b4c53] rounded-[4rem] p-20 text-center shadow-2xl">
           <Bot className="mx-auto mb-8 w-16 h-16 text-[#f9faed]" />
-          <h2 className="text-[#f9faed] text-5xl md:text-7xl font-bold tracking-tighter mb-8">
+          <h2 className="text-[#f9faed] text-4xl md:text-7xl font-bold tracking-tighter mb-8">
             Ready to <br /> Automate?
           </h2>
-          <button className="bg-[#f9faed] text-[#1b4c53] px-6 py-6 rounded-full font-black text-md md:text-xl hover:scale-105 transition-transform flex items-center gap-4 mx-auto">
+          <button className="bg-[#f9faed] text-[#1b4c53] px-6 md:py-6 py-3 rounded-full font-black text-md md:text-xl hover:scale-105 transition-transform flex items-center gap-1 md:gap-4 mx-auto">
             Get Started Now <ArrowRight />
           </button>
         </div>

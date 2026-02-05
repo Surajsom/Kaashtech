@@ -11,7 +11,7 @@ import {
   Coins,
   Banknote, Zap
 } from "lucide-react";
-import PageBanner from "@/components/ui/PageBanner";
+
 import Link from 'next/link';
 const pillars = [
   {
@@ -41,12 +41,8 @@ export default function BankingFinancePage() {
   const vaultRotate = useTransform(scrollYProgress, [0, 1], [0, 90]);
 
   return (
-    <>
-      <PageBanner
-        title="Banking & Finance"
-        subtitle="Secure, Scalable, and Compliant Financial Technology Solutions for the Modern Era."
-        imageUrl="/banners/banking-finance-banner.jpg"
-      />
+  
+    
       <div className="bg-[#f9faed] min-h-screen selection:bg-[#1b4c53] selection:text-white font-sans">
 
         {/* 1. HERO SECTION - THE SECURE VAULT */}
@@ -78,7 +74,7 @@ export default function BankingFinancePage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="inline-block mb-8 px-6 py-2 rounded-full border border-[#1b4c53] text-[#1b4c53] text-sm font-bold uppercase tracking-[0.4em]"
+              className="inline-block mb-8 px-4 py-2 rounded-full border border-[#1b4c53] text-[#1b4c53] text-xs md:text-sm font-bold uppercase tracking-[0.4em]"
             >
               <Lock size={14} className="inline mr-2" /> Institutional Grade Security
             </motion.div>
@@ -100,7 +96,7 @@ export default function BankingFinancePage() {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
               >
-                <h2 className="text-5xl md:text-7xl font-bold text-[#f9faed] leading-tight mb-8">
+                <h2 className="text-4xl md:text-7xl font-bold text-[#f9faed] leading-tight mb-8">
                   Uncompromising <br /> Integrity.
                 </h2>
                 <div className="w-24 h-1 bg-[#3a7e88] mb-10" />
@@ -173,7 +169,7 @@ export default function BankingFinancePage() {
 
 
         {/* FINAL CTA */}
-        <section className="pb-32 px-6">
+        <section className="pb-32">
           <motion.div
             whileHover={{ scale: 0.99 }}
             className="max-w-6xl mx-auto bg-[#1b4c53] rounded-[5rem] p-24 text-center text-[#f9faed] relative overflow-hidden shadow-2xl shadow-[#1b4c53]/40"
@@ -185,7 +181,7 @@ export default function BankingFinancePage() {
             <Link href="/contact-us">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="inline-flex items-center gap-4 bg-[#f9faed] text-[#1b4c53] md:px-14 md:py-7 px-10 py-4 rounded-full font-black text-sm md:text-xl hover:shadow-[0_0_40px_rgba(249,250,237,0.2)] transition-all group"
+              className="inline-flex items-center md:gap-4 mx-auto bg-[#f9faed] text-[#1b4c53] md:px-14 md:py-7 px-10 py-4 rounded-full font-black text-sm md:text-xl hover:shadow-[0_0_40px_rgba(249,250,237,0.2)] transition-all group"
             >
               Launch Your Fintech Solution <ArrowRight />
             </motion.div>
@@ -193,6 +189,6 @@ export default function BankingFinancePage() {
           </motion.div>
         </section>
       </div>
-    </>
+
   );
 }

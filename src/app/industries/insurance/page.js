@@ -15,7 +15,7 @@ import {
   HardHat,
   Crosshair
 } from "lucide-react";
-
+import Link from 'next/link';
 const pillars = [
   { 
     title: "InsurTech Modernization", 
@@ -160,21 +160,23 @@ export default function InsurancePage() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="pb-32 px-6">
+      <section className="pb-32 md:px-6 px-2">
         <motion.div
           whileHover={{ scale: 0.99 }}
-          className="max-w-6xl mx-auto bg-[#1b4c53] rounded-[5rem] p-24 text-center text-[#f9faed] relative overflow-hidden shadow-2xl shadow-[#1b4c53]/40"
+          className="max-w-6xl mx-auto bg-[#1b4c53] rounded-[5rem] p-20 text-center text-[#f9faed] relative overflow-hidden shadow-2xl shadow-[#1b4c53]/40"
         >
           <PieChart className="mx-auto mb-10 w-20 h-20 text-[#3a7e88] opacity-50" />
           <h2 className="text-5xl md:text-8xl font-bold mb-10 tracking-tighter">
             Cover the <br /> Future.
           </h2>
-          <motion.button 
+          <Link href="/contact-us">
+          <motion.div 
             whileHover={{ scale: 1.05 }}
-            className="inline-flex items-center gap-4 bg-[#f9faed] text-[#1b4c53] md:px-14 md:py-7 px-10 py-4 rounded-full font-black text-sm md:text-xl hover:shadow-[0_0_40px_rgba(249,250,237,0.2)] transition-all group"
+            className="inline-flex items-center gap-2 bg-[#f9faed] text-[#1b4c53] md:px-14 md:py-7 px-10 py-4 rounded-full font-black text-sm md:text-xl hover:shadow-[0_0_40px_rgba(249,250,237,0.2)] transition-all group"
           >
             Start Your Insurance Project <ArrowRight />
-          </motion.button>
+          </motion.div>
+          </Link>
         </motion.div>
       </section>
     </div>

@@ -14,7 +14,7 @@ import {
   Cpu,
   Unplug
 } from "lucide-react";
-
+import Link from 'next/link';
 const pillars = [
   { 
     title: "5G Infrastructure", 
@@ -62,7 +62,7 @@ export default function TelecomIndustryPage() {
                 repeat: Infinity, 
                 ease: "easeInOut" 
               }}
-              className="absolute w-full h-[300px] border-t border-b border-[#1b4c53]/20"
+              className="absolute w-full h-75 border-t border-b border-[#1b4c53]/20"
               style={{ top: `${25 + i * 10}%` }}
             />
           ))}
@@ -151,12 +151,12 @@ export default function TelecomIndustryPage() {
             ].map((card, i) => (
               <motion.div
                 key={i}
-                className="group relative p-[1px] rounded-[4rem] overflow-hidden bg-[#1b4c53]/10"
+                className="group relative p-px rounded-[4rem] overflow-hidden bg-[#1b4c53]/10"
               >
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
-                  className="absolute inset-[-100%] bg-[conic-gradient(from_0deg,transparent_0deg,transparent_180deg,#1b4c53_270deg,transparent_360deg)] opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute inset-full bg-[conic-gradient(from_0deg,transparent_0deg,transparent_180deg,#1b4c53_270deg,transparent_360deg)] opacity-0 group-hover:opacity-100 transition-opacity"
                 />
 
                 <div className="relative bg-[#f9faed] p-16 rounded-[3.9rem] h-full shadow-sm">
@@ -170,21 +170,23 @@ export default function TelecomIndustryPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="pb-32 px-6">
+      <section className="pb-32 md:px-6 px-4">
         <motion.div
           whileHover={{ scale: 0.99 }}
-          className="max-w-6xl mx-auto bg-[#1b4c53] rounded-[5rem] p-24 text-center text-[#f9faed] relative overflow-hidden shadow-2xl shadow-[#1b4c53]/40"
+          className="max-w-6xl mx-auto bg-[#1b4c53] rounded-[5rem] p-20 text-center text-[#f9faed] relative overflow-hidden shadow-2xl shadow-[#1b4c53]/40"
         >
           <Wifi className="mx-auto mb-10 w-20 h-20 text-[#3a7e88] opacity-50" />
           <h2 className="text-5xl md:text-8xl font-bold mb-10 tracking-tighter">
             Bridge the <br /> Distance.
           </h2>
+          <Link href="/contact-us">
           <motion.button 
             whileHover={{ scale: 1.05 }}
-            className=" inline-flex items-center gap-4 bg-[#f9faed] text-[#1b4c53] md:px-14 md:py-7 px-10 py-4 rounded-full font-black text-sm md:text-xl hover:shadow-[0_0_40px_rgba(249,250,237,0.2)] transition-all group"
+            className=" inline-flex items-center gap-4 cursor-pointer bg-[#f9faed] text-[#1b4c53] md:px-14 md:py-7 px-10 py-4 rounded-full font-black text-sm md:text-xl hover:shadow-[0_0_40px_rgba(249,250,237,0.2)] transition-all group"
           >
             Start Your Telecom Project <ArrowRight />
           </motion.button>
+          </Link>
         </motion.div>
       </section>
     </div>
