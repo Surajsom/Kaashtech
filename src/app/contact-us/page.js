@@ -237,8 +237,8 @@ export default function ContactUsPage() {
           </AnimatePresence>
         </motion.div>
       </div>
-      <div className="px-5 bg-[#f9faed] border-t border-[#1b4c53]/5">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 pb-15 h-fit lg:gap-0 rounded-[4rem] overflow-hidden shadow-2xl bg-white border border-[#1b4c53]/5">
+      <div className="px-5 bg-[#f9faed] border-t border-[#1b4c53]/5 h-full">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-0 rounded-[4rem] overflow-hidden shadow-2xl bg-white border border-[#1b4c53]/5">
           {/* LEFT SIDE: CONTACT DETAILS */}
           <div className="p-12 lg:p-20 bg-[#1b4c53] text-[#f9faed] flex flex-col justify-center relative overflow-hidden">
             {/* Decorative Blueprint Background */}
@@ -291,22 +291,21 @@ export default function ContactUsPage() {
                   </div>
                   <div>
                     <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
-                      Office Location
+                      {"USA Office (Headquarter)"}
                     </h4>
                     <p className="text-xl font-medium opacity-80 leading-snug">
-                      123 Innovation Drive, Tech District
+                      30 N Gould St Ste R, Sheridan,
                       <br />
-                      San Francisco, CA 94105
+                      WY 82801
                     </p>
                   </div>
                    <div>
                     <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
-                      Office Location
+                      Indian Office
                     </h4>
                     <p className="text-xl font-medium opacity-80 leading-snug">
-                      123 Innovation Drive, Tech District
-                      <br />
-                      San Francisco, CA 94105
+                      Arocon, Noida, Sector 125
+                      Noida,  <br /> Uttar Pradesh- 201313 
                     </p>
                   </div>
                 </div>
@@ -351,7 +350,7 @@ export default function ContactUsPage() {
           <div className="relative h-[500px] lg:h-auto bg-[#f9faed] overflow-hidden">
             {/* Custom Map Styling for the Theme */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050c58!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1670000000000!5m2!1sen!2sus"
+              src="https://maps.google.com/maps?q=30%20N%20Gould%20St%20Suite%20R,%20Sheridan,%20WY%2082801&t=&z=13&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{
