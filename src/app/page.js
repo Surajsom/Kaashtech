@@ -6,6 +6,8 @@ import StaffingSolutionsMovingHoverCards from "@/components/StaffingSolutionsHov
 import IndustriesHiringSection from "@/components/IndustriesHiringSection";
 import WhyChooseUsStaffing from "@/components/WhyChooseUS";
 import GlobalLocation from "@/components/GlobalLocation";
+import LeadershipSection from "@/components/LeadershipSection";
+import GlobalMap from "@/components/GlobalMap";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <IndustriesHiringSection/>
       <WhyChooseUsStaffing/>
       <GlobalLocation/>
+      <LeadershipSection/>
+ 
     </div>
   );
 }

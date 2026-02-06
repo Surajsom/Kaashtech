@@ -75,3 +75,6 @@
   scrollbar-width: thin;
   scrollbar-color: #1b4c53 #eef8f6;
 }
+.leaflet-control-attribution {
+  display: none !important;
+}

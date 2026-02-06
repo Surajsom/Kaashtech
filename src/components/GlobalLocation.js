@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
+import GlobalMap from "@/components/GlobalMap";
 export default function GlobalLocation() {
   return (
     <section className="w-full bg-(--foreground) font-[Urbanist]">
@@ -26,14 +26,8 @@ export default function GlobalLocation() {
         <div className="mt-10 flex justify-center">
           <div className="relative w-full max-w-5xl">
             {/* responsive image wrapper */}
-            <div className="relative aspect-16/8 w-full">
-              <Image
-                src="/images/global_locations_transparent.png"
-                alt="Global footprints map"
-                fill
-                className="object-contain"
-                priority
-              />
+            <div className="w-full">
+              <GlobalMap/>
             </div>
           </div>
         </div>

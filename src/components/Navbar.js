@@ -113,7 +113,7 @@ export default function Navbar() {
 
       {/* ================= NAVBAR ================= */}
       <nav
-        className={`w-full transition-all duration-300 z-50 font-[Urbanist] uppercase text-(--foreground)
+        className={`w-full transition-all duration-300 z-500 font-[Urbanist] uppercase text-(--foreground)
         ${
           scrolled
             ? "fixed top-0 bg-(--background) backdrop-blur-md shadow-2xl"
