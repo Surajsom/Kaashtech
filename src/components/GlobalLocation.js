@@ -1,7 +1,12 @@
 "use client";
+import dynamic from "next/dynamic";
 
-import Image from "next/image";
-import GlobalMap from "@/components/GlobalMap";
+const GlobalMap = dynamic(
+  () => import("@/components/GlobalMap"),
+  { ssr: false } // 🔥 KEY FIX
+);
+
+
 export default function GlobalLocation() {
   return (
     <section className="w-full bg-(--foreground) font-[Urbanist]">
