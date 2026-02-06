@@ -103,7 +103,7 @@ export default function LeadershipSection() {
                 />
 
                 {/* GLASSMORPHISM LINKEDIN OVERLAY */}
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-end backdrop-blur-[2px]">
+                <div className="absolute inset-0 bg-black/20 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-end md:backdrop-blur-[2px]">
                   <motion.a
                     href={leader.linkedin}
                     target="_blank"
