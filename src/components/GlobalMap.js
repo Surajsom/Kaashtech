@@ -12,13 +12,15 @@ export default function GlobalMap() {
 
       // 🔒 Lock the map
       scrollWheelZoom: false,
-      dragging: false,
+      dragging: true,
       doubleClickZoom: false,
       boxZoom: false,
       keyboard: false,
       tap: false,
       touchZoom: false,
       zoomControl: false,
+      worldCopyJump: true, 
+  maxBoundsViscosity: 1.0,
     });
 
     L.tileLayer(

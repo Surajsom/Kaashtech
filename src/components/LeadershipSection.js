@@ -9,25 +9,25 @@ const leaders = [
   {
     name: "Lorem",
     role: "Chief Executive Architect",
-    image: "/images/kaashtech-logo.png",
+    image: "/images/OIP.jpg",
     linkedin: "#",
   },
   {
     name: "Lorem",
     role: "Director of Global Talent",
-    image: "/images/kaashtech-logo.png",
+    image: "/images/OIP.jpg",
     linkedin: "#",
   },
   {
     name: "Lorem",
     role: "Head of Engineering",
-    image: "/images/kaashtech-logo.png",
+    image: "/images/OIP.jpg",
     linkedin: "#",
   },
   {
     name: "Lorem",
     role: "VP of Digital Solutions",
-    image: "/images/kaashtech-logo.png",
+    image: "/images/OIP.jpg",
     linkedin: "#",
   },
 ];
@@ -103,14 +103,14 @@ export default function LeadershipSection() {
                 />
 
                 {/* GLASSMORPHISM LINKEDIN OVERLAY */}
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-end backdrop-blur-[2px] -top-3">
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-end backdrop-blur-[2px]">
                   <motion.a
                     href={leader.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    initial={{ rotate: -45, scale: 0.8 }}
-                    whileHover={{ rotate: 0, scale: 1.1 }}
-                    className="w-16 h-16 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex items-center justify-center text-white shadow-2xl transition-all"
+                    initial={{ rotate: 0, scale: 0.8 }}
+                    whileHover={{  scale: 1 }}
+                    className="w-16 h-16 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex items-center justify-center text-white shadow-2xl"
                   >
                     <Linkedin className='text-black' size={24} />
                   </motion.a>
