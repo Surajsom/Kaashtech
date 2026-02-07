@@ -14,7 +14,7 @@ import {
   Mail,
   ArrowUpRight,
   Phone,
-  Clock ,
+  Clock,
 } from "lucide-react";
 
 export default function ContactUsPage() {
@@ -264,32 +264,33 @@ export default function ContactUsPage() {
             </div>
 
             <div className="relative z-10">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-[#3a7e88]/20 border border-[#3a7e88]/30 text-[#3a7e88] text-[10px] font-black uppercase tracking-[0.3em]"
-              >
-                <span className="w-2 h-2 rounded-full bg-[#3a7e88] animate-pulse" />{" "}
-                Global Headquarters
-              </motion.div>
+              <div className="flex flex-col md:items-start items-center ">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  className="inline-flex items-center w-74 justify-center gap-2 mb-8 px-4 py-2 rounded-full bg-[#3a7e88]/20 border border-[#3a7e88]/30 text-[#3a7e88] text-[10px] font-black uppercase tracking-[0.3em]"
+                >
+                  <span className="w-2 h-2 rounded-full bg-[#3a7e88] animate-pulse" />{" "}
+                  Global Headquarters
+                </motion.div>
 
-              <h2 className="text-5xl font-black mb-12 tracking-tighter uppercase italic leading-none">
-                Visit Our <br />{" "}
-                <span className="text-[#3a7e88] not-italic font-light">
-                  Nexus.
-                </span>
-              </h2>
-
+                <h2 className="text-5xl text-center md:text-left font-black mb-12 tracking-tighter uppercase italic leading-none">
+                  Visit Our <br />{" "}
+                  <span className="text-[#3a7e88] not-italic font-light">
+                    Nexus.
+                  </span>
+                </h2>
+              </div>
               <div className="space-y-10">
                 {/* Address */}
-                <div className="flex gap-6 group cursor-pointer">
-                  <div className="w-14 h-14 border-white/10 flex items-center justify-center group-hover:bg-[#3a7e88] transition-all duration-500">
-                    <MapPin
-                      size={24}
-                      className="text-[#3a7e88] group-hover:text-[#f9faed]"
-                    />
-                  </div>
-                  <div>
+                <div className="flex gap-4 flex-col md:flex-row text-center md:text-left group cursor-pointer">
+                  <div className="flex flex-col items-center md:items-start">
+                    <div className="w-14 h-14 border-white/10 flex items-center justify-center ">
+                      <MapPin
+                        size={24}
+                        className="text-[#3a7e88] group-hover:text-[#f9faed]"
+                      />
+                    </div>
                     <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
                       {"USA Office (Headquarter)"}
                     </h4>
@@ -299,41 +300,44 @@ export default function ContactUsPage() {
                       WY 82801
                     </p>
                   </div>
-                   <div>
+                  <div className="flex flex-col items-center md:items-start">
+                    <div className="w-14 h-14 border-white/10 flex items-center justify-center ">
+                      <MapPin
+                        size={24}
+                        className="text-[#3a7e88] group-hover:text-[#f9faed]"
+                      />
+                    </div>
                     <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
                       Indian Office
                     </h4>
                     <p className="text-xl font-medium opacity-80 leading-snug">
-                      Arocon, Noida, Sector 125
-                      Noida,  <br /> Uttar Pradesh- 201313 
+                      Arocon, Noida, Sector 125 Noida, <br /> Uttar Pradesh-
+                      201313
                     </p>
                   </div>
                 </div>
 
                 {/* Contact Info */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                  <div className="flex gap-6 group cursor-pointer">
-                    <div className="w-14 h-14 border-white/10 flex items-center justify-center group-hover:bg-[#3a7e88] transition-all duration-500">
+                  <div className="flex md:gap-6 group cursor-pointer flex-col md:flex-row items-center md:items-start ">
+                    <div className="w-14 h-14 border-white/10 flex items-center justify-center">
                       <Mail
                         size={24}
                         className="text-[#3a7e88] group-hover:text-[#f9faed]"
                       />
                     </div>
                     <div>
-                      <h4 className="text-xs font-black uppercase tracking-widest text-[#3a7e88] mb-1">
+                      <h4 className="text-xs text-center md:text-left font-black uppercase tracking-widest text-[#3a7e88] mb-1">
                         Email Sync
                       </h4>
                       <p className="text-lg font-bold">contact@kaashtech.com</p>
                     </div>
                   </div>
-                 
                 </div>
 
                 {/* Operational Hours */}
                 <div className="pt-10 border-t border-white/10 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                   
-                  </div>
+                  <div className="flex items-center gap-3"></div>
                   <motion.a
                     href="#"
                     whileHover={{ x: 5 }}
@@ -360,8 +364,6 @@ export default function ContactUsPage() {
               allowFullScreen
               loading="lazy"
             />
-
-           
           </div>
         </div>
       </div>

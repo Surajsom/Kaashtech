@@ -29,7 +29,7 @@ export default function GlobalLocation() {
 
         {/* Map */}
         <div className="mt-10 flex justify-center">
-          <div className="relative w-full max-w-5xl">
+          <div className="relative w-full max-w-5xl z-30">
             {/* responsive image wrapper */}
             <div className="w-full" >
               <GlobalMap/>

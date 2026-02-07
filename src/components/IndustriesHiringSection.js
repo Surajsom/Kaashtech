@@ -3,12 +3,12 @@
 import React, { useMemo, useState } from "react";
 import Image from "next/image";
 import {
-  Truck,
-  UtensilsCrossed,
+  Landmark,
+  Microscope,
   Factory,
-  GraduationCap,
-  Code2,
-  Headphones,
+  Fuel,
+  Radio,
+  Cpu,
   ChevronRight,
 } from "lucide-react";
 import WelcomeElement from "./ui/WelcomeElement";
@@ -16,58 +16,58 @@ import WelcomeElement from "./ui/WelcomeElement";
 
 const INDUSTRIES = [
   {
-    id: "logistics",
-    label: "Logistics & Services",
-    subtitle: "Logistics & Services Industries",
+    id: "Banking",
+    label: "Banking & Finance",
+    subtitle: "Secure finance staffing",
     jobsText: "26 Jobs in 10 Different Companies",
-    icon: Truck,
+    icon: Landmark,
     image:
-      "/images/contactbanner.png",
+      "/images/pagesimages/industry-finance-bg.png",
   },
   {
-    id: "hospitality",
-    label: "Hospitality",
-    subtitle: "Hospitality Industries",
+    id: "Life-Science",
+    label: "Life Science",
+    subtitle: "Research-ready teams",
     jobsText: "14 Jobs in 6 Different Companies",
-    icon: UtensilsCrossed,
+    icon: Microscope,
     image:
-      "/images/contactbanner.png",
+      "/images/pagesimages/industry-lifescience-bg.png",
   },
   {
     id: "manufacturing",
     label: "Manufacturing",
-    subtitle: "Manufacturing Industries",
+    subtitle: "MProduction & plant talent",
     jobsText: "32 Jobs in 12 Different Companies",
     icon: Factory,
     image:
-      "/images/contactbanner.png",
+      "/images/pagesimages/industries-manufacturing-bg.png",
   },
   {
-    id: "education",
-    label: "Education & Government",
-    subtitle: "Education & Government Industries",
+    id: "Telecom",
+    label: "Telecom",
+    subtitle: "Network & telecom staffing",
     jobsText: "19 Jobs in 8 Different Companies",
-    icon: GraduationCap,
+    icon: Radio,
     image:
-      "/images/contactbanner.png",
+      "/images/pagesimages/industry-telecom-bg.png",
   },
   {
-    id: "software",
-    label: "Software/IT",
-    subtitle: "Software & IT Industries",
+    id: "Technology",
+    label: "Technology",
+    subtitle: "Top tech professionals",
     jobsText: "40 Jobs in 15 Different Companies",
-    icon: Code2,
+    icon: Cpu,
     image:
-      "/images/contactbanner.png",
+      "/images/pagesimages/industry-technology-bg.png",
   },
   {
-    id: "support",
-    label: "Front Line Support",
-    subtitle: "Front Line Support Industries",
+    id: "Oil&Gas",
+    label: "Oil & Gas",
+    subtitle: "Energy workforce solutions",
     jobsText: "21 Jobs in 9 Different Companies",
-    icon: Headphones,
+    icon: Fuel,
     image:
-      "/images/contactbanner.png",
+      "/images/pagesimages/industry-oilgas-bg.png",
   },
 ];
 function nextIndustry() {

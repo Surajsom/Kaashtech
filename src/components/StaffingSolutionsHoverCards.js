@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, FileText, User2, Briefcase } from "lucide-react";
 import WelcomeElement from "./ui/WelcomeElement";
 import { InfiniteMovingCards } from "./ui/Infinite-moving-cards";
+import cardsmergedata from"../lib/cardsdatmerge"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 26 },
@@ -14,30 +15,7 @@ const fadeUp = {
   },
 };
 
-const cards = [
-  {
-    title: "Direct Hire",
-    icon: User2,
-    img: "/images/contactbanner.png",
-    desc: "Hire top candidates faster with verified profiles.",
-    href: "/workforce-solutions/direct-hire",
-  },
-  {
-    title: "Contract",
-    icon: FileText,
-    img: "/images/contactbanner.png",
-    desc: "Flexible contract staffing for every business need.",
-    href: "/workforce-solutions/contract",
-  },
-  {
-    title: "Temporary",
-    icon: Briefcase,
-    img: "/images/contactbanner.png",
-    desc: "On-demand workforce support to scale quickly.",
-    href: "/workforce-solutions/temporary",
-  },
-];
-
+const carddat = cardsmergedata();
 export default function StaffingSolutionsMovingHoverCards() {
   return (
     <section className="relative w-full font-[Urbanist] bg-(--foreground) ">
@@ -69,9 +47,9 @@ export default function StaffingSolutionsMovingHoverCards() {
         {/* Infinite Moving Cards */}
         <div className="mt-14">
           <InfiniteMovingCards
-            items={cards}
+            items={carddat}
             direction="right" // ✅ left or right
-            speed="normal" // fast | normal | slow
+            speed="slow" // fast | normal | slow
             pauseOnHover={true} // pause when mouse on slider
             className="w-full"
             renderItem={(c, i) => (

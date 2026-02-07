@@ -165,7 +165,7 @@ export default function StaffingToggleSection() {
 
 
               <img
-                src="/images/StaffingToggleSection.jpg"
+                src="/images/StaffingToggleSection.png"
                 alt="Staffing illustration"
                 className="relative w-full rounded-3xl"
               />

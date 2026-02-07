@@ -113,7 +113,7 @@ export default function Navbar() {
 
       {/* ================= NAVBAR ================= */}
       <nav
-        className={`w-full transition-all duration-300 z-500 font-[Urbanist] uppercase text-(--foreground)
+        className={`w-full transition-all duration-300 z-50 font-[Urbanist] uppercase text-(--foreground)
         ${
           scrolled
             ? "fixed top-0 bg-(--background) backdrop-blur-md shadow-2xl"
@@ -183,7 +183,7 @@ export default function Navbar() {
           </div>
 
           {/* ================= RIGHT ICONS ================= */}
-          <div className="flex items-center gap-4 md:hidden">
+          <div className="flex items-center gap-4 md:hidden z-5000">
             <button onClick={() => setOpen(true)} className="relative z-10">
               <Menu className="w-7 h-7" />
             </button>
